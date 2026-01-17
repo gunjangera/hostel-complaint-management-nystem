@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css styling/student.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Student Dashboard</h1>
+
+        <div class="profile" id="profileBtn">
+            <span>Student</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+        </div>
+
+        <!-- profile pe click krne ke liye -->
+        <div class="profile-menu" id="profileMenu">
+            <p><strong>Name:</strong> Student</p>
+            <br>
+            <p><strong>Email:</strong> student@example.com</p>
+            <br>
+            <button id="back">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Welcome to Student Dashboard</h2>
+
+        <div class="cards">
+            <div class="card" id="dash-raise-complaint">Raise Complaint</div>
+            <div class="card" id="dash-view-complaint">View Complaint</div>
+        </div>
+
+        <div class="card" id="notification">Notifications</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="../js file/supabase.js"></script>
+    <script src="../js file/student.js"></script>
+
+
+
+</body>
+</html>

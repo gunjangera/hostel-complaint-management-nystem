@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pending Complaints</title>
+  <link rel="stylesheet" href="../css styling/admin.css">
+</head>
+<body data-page="pending">
+  <nav>
+     <h2 class="logo" id="adminDashboardBtn">Admin Dashboard</h2>
+    <div class="profile" id="profileBtn">
+      <span class="admin-name">Admin</span>
+      <img src="PFP.jpg">
+      <div class="profile-menu" id="profileMenu">
+        <p><strong>Name:</strong> admin</p>
+        <p><strong>Email:</strong> admin@example.com</p>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1 class="heading">Pending Complaints</h1>
+      <div id="complaintList"></div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="../js file/admin-complaints.js"></script>
+  <script src="../js file/supabase.js"></script>
+</body>
+</html>

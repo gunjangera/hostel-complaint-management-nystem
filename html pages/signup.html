@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup | Hostel Complaint System</title>
+    <link rel="stylesheet" href="../css styling/signup.css">
+</head>
+<body>
+
+    <h2>Student Signup</h2>
+
+    <form action="#" method="post">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Enrollment / Roll Number:</label><br>
+        <input type="text" name="enrollment" required><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" required><br><br>
+
+        <label>Hostel Access Code:</label><br>
+        <input type="password" name="hostel-code" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <input type="submit" value="Sign Up">
+        <button type="button">Back</button>
+
+    </form>
+
+    <p>Already have an account? <a href="student-register.html">Login here</a></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="../js file/supabase.js"></script>
+
+     <script src="../js file/signup.js"></script>
+     <script src="../js file/auth.js"></script>
+
+</body>
+</html>

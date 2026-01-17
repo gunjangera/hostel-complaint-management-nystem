@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="../css styling/global.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="indexcard">
+            <h1 class="head1">Hostel complaint system</h1>
+            <h3 class="head2">Select your role to continue</h3>
+            <div class="row">
+                <button id="student-login" class="btn">Student login</button>
+                <button id="admin-login" class="btn">Admin login</button>
+            </div>
+            <br>
+            <br>
+            <p class="newuser">Don't have an account ? Signup here<p>
+             <button id="signup" class="btn">Sign Up</button>
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById("student-login").addEventListener("click", () => {
+            window.location.href = "student-register.html";
+        });
+
+        document.getElementById("admin-login").addEventListener("click", () => {
+            window.location.href = "admin-register.html";
+        });
+
+        document.getElementById("signup").addEventListener("click", () => {
+            window.location.href = "signup.html";
+        });
+    </script>
+
+</body>
+
+</html>

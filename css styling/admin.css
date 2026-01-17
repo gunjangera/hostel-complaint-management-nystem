@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: whitesmoke;
+
+  overflow-x: hidden;
+
+
+}
+
+nav {
+    color: white;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0;
+}
+
+.logo {
+    margin-left: 18px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    position: relative; 
+}
+
+.profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 15px; 
+}
+
+/*profile click*/
+
+.profile-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 200px;
+    height: auto;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+}
+
+.profile-menu.show {
+    display: block;
+}
+
+#logoutBtn{
+    background-color: red;
+    color: white;
+    height:40px;
+    width: 100px;
+    padding : 4px;
+}
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid rgb(234, 237, 236);
+    border-radius: 20px;
+    gap: 20px;
+    height: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading{
+    font-family: poppins;
+    font-weight: 420;
+    text-align: center;
+
+}
+
+.card-btn {
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    border: none; 
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+
+}
+
+.card-btn:hover {
+    transform: scale(1.05);
+}
+
+.red{
+    background-color: rgb(238, 80, 49);
+}
+
+.blue{
+    background-color: rgb(5, 163, 254);
+}
+
+.green{
+    background-color: rgb(59, 226, 59);
+
+}
+
+.yellow{
+    background-color: rgb(242, 242, 85);
+}
+
+.chart-section {
+    justify-self: center;
+    width: 400px;
+  margin-top: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: poppins;
+}
+
+.chart-section h3 {
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* totalcomplaint */
+.complaint-card{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #e5e7eb;
+}
+
+.complaint-card h3{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.complaint-card p{
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 14px;
+}
+
+.status-box{
+    padding: 10px 14px;
+    border-radius: 8px;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.status-pending{
+    background-color: #d10000;
+}
+
+.status-resolved{
+    background-color: #008f39;
+}
+
+.resolve-btn{
+    padding: 7px 16px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.resolve-btn:hover{
+    background: darkblue;
+}
+

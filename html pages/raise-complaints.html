@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise a complaint</title>
+    <link rel="stylesheet" href="../css styling/raise_complaint.css">
+</head>
+<body>
+    <div class="main">
+        <div class="side">
+            <aside>
+                <h2 class="sideHeader dashboard-link" id="go-dashboard">Student Portal</h2>
+
+                <button class="btn" id="side-raise-complaint">Raise complaint</button>
+                <button class="btn" id="side-view-complaint">View complaint</button>
+                <button class="btn active" id="notification">Notifications</button>
+                <button class="logout">Logout</button>
+            </aside>
+        </div>
+            <div class="form">
+
+                <form id="raise-complaint-form">
+                    <h2 class="heading">Raise a complaint</h2>
+                    
+
+                        <label class="category" for="category">Category*</label>
+                        <select name="category" id="category">
+                            <option value="" disabled selected>Select the category</option>
+                            <option value="Electricity">Electricity</option>
+                            <option value="Plumbing">Plumbing</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Hygiene">Hygiene</option>
+                        </select>
+                    
+
+                    <label for="title">Title</label>
+                    <input type="text " id="title" name="title" placeholder="Brief title for your complaint">
+
+                    <label for="description">Description</label>
+                    <textarea name="description" class="txt-box" id="description" rows="5" placeholder="Provide detailed description of your complaint"></textarea>
+
+                    <button type="submit" class="submit">Submit complaint</button>
+
+
+                </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="../js file/supabase.js"></script>
+    <script src="../js file/student.js"></script>
+
+
+</body>
+</html>

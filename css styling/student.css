@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+.header {
+    background: blue;
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    color: black;
+    width: 200px;
+    padding: 15px;
+    display: none;
+    border-radius: 10px;
+    z-index: 2000;
+}
+
+#back{
+    background-color: red;
+    color: white;
+    height:40px;
+    width: 100px;
+    padding : 4px;
+}
+
+.profile-menu.show {
+    display: block;
+}
+
+
+.container {
+    width: 90%;
+    margin: 40px ;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+     display: flex;
+      align-items: center;
+      justify-content: center;
+            height: 200px;
+      width:300px
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+
+#dash-raise-complaint {
+    background: #0099ff;
+      color: #333;
+}
+
+#dash-view-complaint {
+    background: #f7f76a;
+    color: #333;
+}
+
+#notification {
+    background: #28e34c;
+    margin-top: 100px;
+    margin-left:  230PX;
+    width: 70%;
+      color: #333;
+      height: 100px;
+}
